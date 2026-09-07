@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+      
+        color: white;
+        margin-left: 1vw;
+        margin-top: -1vh;
+        
+    }
+    .hidden h1{
+        letter-spacing: 3px;
+    }
+    .hidden p{
+        width: 20vw;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+    .header img{
+        margin-left: 1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:60vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+
+    nav a:hover {
+        color: yellow;
+       
+        transform: perspective(200px) translateZ(20px);
+    }
+
+
+    .footer {
+        background-color: #004d32;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        margin-top: 30px;
+        margin-bottom: -2vh;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .footer-logo span {
+        letter-spacing: 1px;
+    }
+
+    .footer p {
+        font-size: 11px;
+
+    }
+
+    .social-icons {
+        margin: 6px 0;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: white;
+        color: #004d32;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .social-icons a:hover {
+        background-color: #d6a928;
+        color: white;
+    }
+
+    .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 5px;
+    }
+
+    .heritage {
+        position: absolute;
+        top: 25vh;
+        left: 10vw;
+        z-index: 1;
+        font-weight: 900;
+        color: white;
+    }
+
+    .heritage h4 {
+        line-height: 20px;
+        font-weight: 900;
+        font-size: 28px;
+        color: rgb(255, 6, 22);
+    }
+
+    .heritage h3 {
+        position: relative;
+        left: 65vw;
+        top: -35vh;
+        width: 20vw;
+        color: rgba(2, 6, 2, 0.998);
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .heritage span {
+        color: rgb(245, 225, 7);
+        font-size: 50px;
+    }
+
+
+    .culture {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-top: -20px;
+    }
+
+    .culture img {
+        height: 15vh;
+        width: 12vw;
+
+    }
+
+    .artforms {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-left: 2vw;
+
+    }
+
+    .artforms img {
+        height: 30vh;
+        width: 23vw;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .artforms img:hover {
+        transform: perspective(500px) translateZ(20px);
+    }
+
+    .artforms p {
+        text-align: center;
+        margin-top: -3vh;
+    }
+
+    .artforms div {
+        width: 23vw;
+    }
+
+    .artforms .artname {
+        background-image: linear-gradient(rgba(192, 243, 184, 0.386));
+        margin-top: -1.5vh;
+    }
+
+    .artforms h4 {
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    .festivals {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-left: 2vw;
+
+    }
+
+    .festivals img {
+        height: 30vh;
+        width: 23vw;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .festivals img:hover {
+        transform: perspective(500px) translateZ(20px);
+    }
+
+    .festivals p {
+        text-align: center;
+        margin-top: -3vh;
+    }
+
+    .festivals div {
+
+        width: 23vw;
+    }
+
+    .festivals .festname {
+        background-image: linear-gradient(rgba(231, 114, 114, 0.345));
+        margin-top: -1.5vh;
+    }
+
+    .festivals h4 {
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    .heritagesites {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        margin-left: 2vw;
+
+    }
+
+    .heritagesites img {
+        height: 30vh;
+        width: 23vw;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    .heritagesites img:hover {
+        transform: perspective(500px) translateZ(20px);
+    }
+
+    .heritagesites p {
+        text-align: center;
+        margin-top: -3vh;
+    }
+
+    .heritagesites div {
+        width: 23vw;
+    }
+
+    .heritagesites .heriname {
+        background-image: linear-gradient(rgba(54, 17, 126, 0.235));
+        margin-top: -1.5vh;
+    }
+
+    .heritagesites h4 {
+        text-align: center;
+        margin-top: 1vh;
+    }
+
+    .heritagesites .andhra {
+        background-image: linear-gradient(white);
+    }
+
+    .andhra img {
+        z-index: -1;
+        opacity: 70%;
+        height: 40vh;
+    }
+
+    .andhra p {
+        z-index: 1;
+        height: 2vh;
+        width: 15vw;
+        position: absolute;
+        top: 225vh;
+        right: 5vw;
+        font-size: 25px;
+        color: rgb(7, 7, 7);
+        font-weight: 900;
+    }
+
+    .people {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        margin-left: 2vw;
+
+    }
+
+    .people img {
+        height: 10vh;
+        width: 7vw;
+        position: relative;
+        left: 5vw;
+    }
+
+    .people p {
+        text-align: center;
+        margin-top: -3vh;
+    }
+
+    .people div {
+        background-image: linear-gradient(white);
+        width: 17vw;
+    }
+
+    .people h4 {
+        text-align: center;
+        margin-top: 1vh;
+    }
+</style>
+
+<body>
+    <header class="header">
+
+        <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+        <div class="hidden">
+            <h1>HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="Explore.html">Explore</a>
+
+            <a href="Culture.html">Culture</a>
+
+            <a href="Food.html">Food</a>
+
+            <a href="Tips.html">Tips</a>
+
+            <a href="About.html">About</a>
+
+        </nav>
+
+    </header>
+    <main>
+        <img src="./Images/mainculture.jpg" alt="" width="100%" height="350vh">
+        <div class="heritage">
+            <h4>OUR CULTURE</h4>
+            <H1>A HERITAGE <br> <span>THAT INSPIRES</span> </H1>
+            <h3> From ancient temples to vibrant festivals, from classical arts <br>
+                to warm traditions - experience the soul of Andhra Pradesh.</h3>
+        </div>
+        <h2 style="text-align: center;">DISCOVER ANDHRA CULTURE<br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="360vw"></h2>
+        <p style="text-align: center; margin-top: -4vh;">A blend of history, art, festivals and traditions.</p>
+        <div class="culture">
+            <h4> <img src="./Images/temple.png" alt=""><br>&emsp;&emsp;&nbsp;&nbsp; Temples</h4>
+            <h4><img src="./Images/artform.png" alt=""><br>&emsp; &emsp; &nbsp;&nbsp;Art Form</h4>
+            <h4><img src="./Images/festival.png" alt=""><br>&emsp; &emsp; &nbsp;&nbsp;Festival</h4>
+            <h4><img src="./Images/tradition.png" alt=""><br>&emsp; &emsp;&nbsp; Traditions</h4>
+            <h4><img src="./Images/people.png" alt=""><br>&emsp; &emsp; &nbsp;&nbsp;&nbsp;People</h4>
+            <h4><img src="./Images/heritage.png" alt=""><br>&emsp; &emsp; Heritage Sites</h4>
+        </div>
+        <h2 style="text-align: center;">TRADITIONAL ART FORMS<br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="310vw"></h2>
+        <p style="text-align: center; margin-top: -4vh;">Art that tells the story of Andhra.</p>
+        <div class="artforms">
+            <div>
+                <img src="./Images/kuchipudi.png" alt="">
+                <div class="artname">
+                    <h4>Kuchipudi</h4>
+                    <p>A classical dance form from
+                        Andhra Pradesh, known for its
+                        grace, expressions and storytelling</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/tholubommalata.png" alt="">
+                <div class="artname">
+                    <h4>Tholu Bommalata </h4>
+                    <p>A traditional shadow puppet
+                        art form that brings stories
+                        to life.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/ethipokalatoys.png" alt="">
+                <div class="artname">
+                    <h4>Etikoppala Toys</h4>
+                    <p> World famous wooden toys
+                        handcrafted by skilled artisans
+                        of Etikoppaka.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/kalamkari.png" alt="">
+                <div class="artname">
+                    <h4>Kalamkari</h4>
+                    <p>A unique hand-painting and
+                        block-printing art, known for
+                        its intricate designs.</p>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center;">VIBRANT FESTIVALS <br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="300vw"></h2>
+        <p style="text-align: center; margin-top: -4vh;">Celebrations that bring people together.</p>
+        <div class="festivals">
+            <div>
+                <img src="./Images/sankranthi.jpg" alt="">
+                <div class="festname">
+                    <h4>Sankranthi</h4>
+                    <p>A harvest festival celebrated
+                        with joy. traditions and rural
+                        festivities.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/ugadi.jpg" alt="">
+                <div class="festname">
+                    <h4>Ugadi </h4>
+                    <p> A harvest festival celebrated
+                        with joy. traditions and rural
+                        festivities.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/dasara.jpg" alt="">
+                <div class="festname">
+                    <h4>Dasara</h4>
+                    <p>A grand celebration at
+                        Indrakeeladri Temple, attracting
+                        lakhs of devotees.</p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/deepavali.jpg" alt="">
+                <div class="festname">
+                    <h4>Deepavali</h4>
+                    <p>The festival of lights, celebrated
+                        with devotion and happiness
+                        across Andhra.</p>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center;">ICONIC HERITAGE SITES <br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="360vw"></h2>
+        <p style="text-align: center; margin-top: -4vh">Timeless structures, endless stories.</p>
+        <div class="heritagesites">
+            <div>
+                <img src="./Images/lepakshi.jpg" alt="">
+                <div class="heriname">
+                    <h4>Lepakshi Temple</h4>
+                    <p>Famous for its stunning architecture
+                        and hanging pillar. </p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/amaravati.jpg" alt="">
+                <div class="heriname">
+                    <h4>Amaravati Stupa</h4>
+                    <p>Famous for its stunning architecture
+                        and hanging pillar. </p>
+                </div>
+            </div>
+            <div>
+                <img src="./Images/bhavani temple.jpg" alt="">
+                <div class="heriname">
+                    <h4>Bhavani Temple</h4>
+                    <p>A scenic spot with cultural events
+                        and natural beauty.</p>
+                </div>
+            </div>
+            <div class="andhra">
+                <img src="./Images/andhra.png" alt="">
+
+                <p><sup>"</sup>Culture is
+                    not just our past,
+                    it is our present
+                    and future.<sup>"</sup>
+                    ANDHRA PRADESH</p>
+            </div>
+        </div>
+        <h2 style="text-align: center;">PEOPLE AND TRADITIONS <br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="300vw"></h2>
+        <p style="text-align: center; margin-top: -4vh;"> Warm people, Rich traditions, Lively lifestyle.</p>
+        <div class="people">
+            <div>
+                <img src="./Images/warm.png" alt="">
+                <h4>Warm Hospality</h4>
+                <p>People welcome you
+                    with open hearts..</p>
+            </div>
+            <div>
+                <img src="./Images/sustain.png" alt="">
+                <h4>Tradition Cusine </h4>
+                <p> Traditional Cuisine
+                    Authentic flavors passed
+                    generations.</p>
+            </div>
+            <div>
+                <img src="./Images/rural.png" alt="">
+                <h4>Rural Life</h4>
+                <p>Experience the simplicity
+                    and beauty of village life.</p>
+            </div>
+            <div>
+                <img src="./Images/handi.png" alt="">
+                <h4>Handicrafts</h4>
+                <p>Support local artisans
+                    and handmade products.</p>
+            </div>
+            <div>
+                <img src="./Images/music.png" alt="">
+                <h4>Folk Songs</h4>
+                <p>Melodies that reflect
+                    the spirit of Andhra.</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <span>HIDDEN ANDHRA</span>
+        </div>
+
+        <p>Discover the Andhra Beyond the Usual</p>
+
+        <div class="social-icons">
+            <a href="#">f</a>
+            <a href="#">◎</a>
+            <a href="#">▶️</a>
+        </div>
+
+        <p class="copyright">
+            2026 Hidden Andhra. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+     body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+      
+        color: white;
+        margin-left: 2vw;
+        margin-top: -1vh;
+        
+    }
+    .hidden h1{
+        letter-spacing: 3px;
+         position: relative;
+        left: 20vh;
+        margin-top: -12vh;
+    }
+    .hidden p{
+        width: 20vw;
+        position: relative;
+        left: 20vh;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+    .header img{
+        margin-left: -1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:80vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+
+    nav a:hover {
+        color: yellow;
+       
+        transform: perspective(200px) translateZ(20px);
+    }
+
+    .mountain-img {
+        height: 400px;
+        width: 1535px;
+    }
+
+    .bg {
+        position: absolute;
+        width: 1188px;
+
+    }
+
+    .hd {
+        display: block;
+        font-size: 50px;
+        color: white;
+        margin-top: -300px;
+        margin-left: 200px;
+    }
+
+    .pp {
+        color: white;
+        margin-left: 200px;
+        margin-top: -50px;
+    }
+
+    .btn {
+        margin-left: 200px;
+        border: none;
+        background-color: #01452E;
+        color: white;
+        width: 250px;
+        height: 50px;
+    }
+
+    .hd1 {
+        margin-top: ;
+    }
+
+    .dishes {
+        position: absolute;
+        margin-top: 400px;
+        text-align: center;
+    }
+
+    .dt {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .ditems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .ditems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+
+    .cusines {
+        position: absolute;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .ct {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .citems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .citems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+
+    .sweets {
+        position: absolute;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .st {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .sitems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .sitems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+    .footer {
+    background-color: #004d32;
+    color: white;
+    text-align: center;
+    width:100%;
+    height: 120px;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    margin-top: 500px ;
+    
+}
+
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    
+}
+
+.footer-logo span {
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 11px;
+    
+}
+
+.social-icons {
+    margin: 6px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: #004d32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    background-color: #d6a928;
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 5px;
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="hidden">
+            <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+            <h1>HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="Explore.html">Explore</a>
+
+            <a href="Culture.html">Culture</a>
+
+            <a href="Food.html">Food</a>
+
+            <a href="Tips.html">Tips</a>
+
+            <a href="About.html">About</a>
+
+        </nav>
+    </header>
+    
+        <div class="bg">
+            <img src="./gallery/bg.png" width="128%">
+            <h2 class="hd">
+                A TASTE OF<br>
+                <font color="yellow">ANDHRA</font>
+            </h2>
+            <p class="pp">
+                From traditional recipes to street delights,<br>
+                Andhra's food is a journey of flavor,<br>culture and tradition.
+            </p>
+            <button class="btn">
+                Explore Andhra Food
+            </button>
+        </div>
+        <div class="dishes">
+            <h2 class="hd1">POPULAR ANDHRA DISHES</h2>
+            <hr class="line">
+            <p>A taste of Andhra you must try</p>
+            <div class="dt">
+                <div class="ditems">
+                    <img src="./gallery/biryani.webp">
+                    <h3>Andhra Biryani</h3>
+                    <p>Aromatic basmati rice layered with rich spices and tender meat.
+                        A signature Andhra dish known for its bold and fiery flavors.</p>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/gp.png">
+                    <h3>Gongura Pachadi</h3>
+                    <p>A tangy chutney made from fresh sorrel leaves and traditional spices.
+                        A beloved Andhra condiment that adds zest to every meal.</p>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/cp.png">
+                    <h3>Kodivepudu</h3>
+                    <p>Spicy Andhra-style chicken fry cooked with roasted spices.
+                        Crispy, flavorful, and a favorite among spice lovers.</p>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/pa.png">
+                    <h3>Pesarattu</h3>
+                    <p>A healthy green gram dosa served with ginger chutney.
+                        A nutritious breakfast that combines taste and tradition.</p>
+                </div>
+
+            </div>
+            <div class="cusines">
+                <h2 class="hd2">REGIONAL CUSINES</h2>
+                <hr class="line">
+                <p>Every region in andhra has a unique taste</p>
+                <div class="ct">
+                    <div class="citems">
+                        <img src="./gallery/ca.png">
+                        <h3>Coastal Andhra Cuisine</h3>
+                        <p>Famous for fresh seafood, tangy curries, and aromatic spices.
+                            A culinary experience inspired by the Bay of Bengal coastline.</p>
+                    </div>
+                    <div class="citems">
+                        <img src="./gallery/rs.png">
+                        <h3>Rayalaseema Cuisine</h3>
+                        <p>Known for its fiery flavors and rich traditional recipes.
+                            Perfect for those who enjoy bold and spicy food.</p>
+                    </div>
+                    <div class="citems">
+                        <img src="./gallery/uc.png">
+                        <h3>Uttarandhra Cuisine</h3>
+                        <p>A blend of coastal freshness and traditional village cooking.
+                            Offers unique flavors passed down through generations.</p>
+                    </div>
+                    <div class="citems">
+                        <img src="./gallery/gc.jpg">
+                        <h3>Godavari Cuisine</h3>
+                        <p>Renowned for its rich flavors, seafood, and festive dishes.
+                            A perfect reflection of Andhra's culinary heritage.</p>
+                    </div>
+
+                </div>
+            
+                <div class="sweets">
+                    <h2 class="hd2">STREET FOOD AND SWEETS</h2>
+                    <hr class="line">
+                    <p>Quick Bites and Sweets from Andhra</p>
+                    <div class="st">
+                        <div class="sitems">
+                            <img src="./gallery/Punugulu.jpg">
+                            <h3>Punugulu</h3>
+                            <p>Aromatic basmati rice layered with rich spices and tender meat.
+                                A signature Andhra dish known for its bold and fiery flavors.</p>
+                        </div>
+                        <div class="sitems">
+                            <img src="./gallery/mb.jpg">
+                            <h3>Mirapakai Bajji</h3>
+                            <p>Green chilies stuffed and coated in a crispy gram flour batter.
+                                A spicy street-food delight loved across Andhra Pradesh..</p>
+                        </div>
+                        <div class="sitems">
+                            <img src="./gallery/Bobbatlu.jpg">
+                            <h3>Bobbatlu</h3>
+                            <p>A sweet flatbread filled with jaggery and lentil stuffing.
+                                Prepared during festivals and special family celebrations.</p>
+                        </div>
+                        <div class="sitems">
+                            <img src="./gallery/Pootharekulu.jpg">
+                            <h3>Pootharekulu</h3>
+                            <p>Paper-thin rice starch sheets layered with sugar and ghee.
+                                A unique Andhra sweet known for its delicate texture.p>
+                        </div>
+                        <div class="sitems">
+                            <img src="./gallery/Ariselu.jpg">
+                            <h3>Ariselu</h3>
+                            <p>Traditional rice flour and jaggery sweet deep-fried to perfection.
+                                An essential festive delicacy in Andhra households.</p>
+                        </div>
+                        <div class="sitems">
+                            <img src="./gallery/Rava_Laddu.jpg">
+                            <h3>Rava Laddu</h3>
+                            <p>Soft semolina laddus flavored with cardamom and nuts.
+                                A simple yet delightful sweet enjoyed on festive occasions.</p>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+    
+  <footer class="footer">
+    <div class="footer-logo">
+         <span>HIDDEN ANDHRA</span>
+    </div>
+
+    <p>Discover the Andhra Beyond the Usual</p>
+
+    <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">▶️</a>
+    </div>
+
+    <p class="copyright">
+         2026 Hidden Andhra. All Rights Reserved.
+    </p>
+</footer>
+</body>

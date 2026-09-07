@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</head>
+
+<style>
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+      
+        color: white;
+        margin-left: 2vw;
+        margin-top: -1vh;
+        
+    }
+    .hidden h1{
+        letter-spacing: 3px;
+         position: relative;
+        left: 20vh;
+        margin-top: -12vh;
+    }
+    .hidden p{
+        width: 20vw;
+        position: relative;
+        left: 20vh;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+    .header img{
+        margin-left: -1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:80vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+
+    nav a:hover {
+        color: yellow;
+       
+        transform: perspective(200px) translateZ(20px);
+    }
+
+    .mountain-img {
+        height: 400px;
+        width: 1535px;
+    }
+
+    .bg {
+        position: absolute;
+        width: 1188px;
+        height: 300PX;
+
+    }
+
+    .hd {
+        display: block;
+        font-size: 50px;
+        color: white;
+        margin-top: -300px;
+        margin-left: 200px;
+    }
+
+    .pp {
+        color: white;
+        margin-left: 200px;
+        margin-top: -50px;
+    }
+
+    .btn {
+        margin-left: 200px;
+        border: none;
+        background-color: #01452E;
+        color: white;
+        width: 250px;
+        height: 50px;
+    }
+
+    .hd1 {
+        margin-top: ;
+    }
+
+    .dishes {
+        position: absolute;
+        margin-top: 400px;
+        text-align: center;
+    }
+
+    .dt {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .ditems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .ditems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+
+    .cusines {
+        position: absolute;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .ct {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .citems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .citems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+
+    .sweets {
+        position: absolute;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .st {
+        display: flex;
+        margin-left: 20px;
+
+    }
+
+    .sitems img {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+    }
+
+    .sitems {
+        padding: 20px;
+    }
+
+    .line {
+        width: 400px;
+    }
+    .footer {
+    background-color: #004d32;
+    color: white;
+    text-align: center;
+    width:100%;
+    height: 120px;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    margin-top: 600px ;
+    
+}
+
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    
+}
+
+.footer-logo span {
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 11px;
+    
+}
+
+.social-icons {
+    margin: 6px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: #004d32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    background-color: #d6a928;
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 5px;
+}
+.links{
+    text-decoration: none;
+    color: green;
+}
+.quote{
+    display: flex;
+    margin-left: 30px;
+    padding: 50px;
+}
+.quote p{
+    padding: 20px;
+    margin-top: 60px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="hidden">
+            <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+            <h1>HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+            <a href="Index.html">Home</a>
+
+            <a href="Explore.html">Explore</a>
+
+            <a href="Culture.html">Culture</a>
+
+            <a href="Food.html">Food</a>
+
+            <a href="Tips.html">Tips</a>
+
+            <a href="About.html">About</a>
+
+        </nav>
+    </header>
+    
+        <div class="bg">
+            <img src="./gallery/bg2.png" width="128%" height="400px" >
+            <h2 class="hd">
+                TRAVEL SMART<br>
+                <font color="yellow">EXPLORE MORE</font>
+            </h2>
+            <p class="pp">
+                Simple tips to make your Andhra journey better.
+            </p>
+            <button class="btn"><a href="home.html">
+                Plan Your Trip </a>
+            </button>
+        </div>
+        <div class="dishes">
+            <h2 class="hd1">TRAVEL TIPS</h2>
+            <hr class="line">
+            <p>Everything you need to know for a memorable trip.</p>
+            <div class="dt">
+                <div class="ditems">
+                    <img src="./gallery/w to pack.jfif">
+                    <h3>What to pack</h3>
+                    <p>Carry comfortable clothing, sunscreen, and a reusable water bottle.
+                        Pack travel essentials to ensure a safe and enjoyable journey.</p>
+                        <button><a class="links" href="https://eaglecreek.com/blogs/articles/what-pack-ultimate-travel-packing-checklist?srsltid=AfmBOordpKyK_1vc4x9RTcXW-TXtiG-O2U_m7utXnvChxcNOQyEpjID4" >Lear More</a></button>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/cal.png">
+                    <h3>Best Time to Visit</h3>
+                    <p>October to March offers pleasant weather and scenic landscapes.
+                        Perfect for sightseeing, beaches, hills, and outdoor adventures.</p>
+                        <button><a class="links" href="https://www.thebesttimetovisit.com/" >Lear More</a></button>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/bus.png">
+                    <h3>How to Travel</h3>
+                    <p>Andhra Pradesh is well connected by road, rail, and air.
+                        Choose buses, trains, or rental vehicles for convenient travel.</p>
+                      <button><a class="links" href="https://theworldtravelguy.com/" >Lear More</a></button>
+                </div>
+                <div class="ditems">
+                    <img src="./gallery/budget.jfif">
+                    <h3>Budget Tips</h3>
+                    <p>Plan your expenses wisely and choose local transport options.
+                        Explore Andhra's attractions without exceeding your budget.</p>
+                        <button><a class="links" href="https://www.digitaltravelacademy.com/travel-on-a-budget/" >Lear More</a></button>
+                </div>
+
+            </div>
+            <div class="cusines">
+                <h2 class="hd2">TRAVEL BY SEASON</h2>
+                <hr class="line">
+                <p>Each season in Andhra has its own charm.</p>
+                <div class="ct">
+                    <div class="citems">
+                        <img src="./gallery/oct.jfif">
+                        <h3>October – March</h3>
+                        <p>Cool weather and clear skies make travel more comfortable.
+                           Ideal for beaches, hill stations, and cultural exploration.</p>
+                    </div>
+                    <div class="citems">
+                        <img src="./gallery/jul.jfif">
+                        <h3>July – September</h3>
+                        <p>Monsoon rains transform Andhra into a lush green paradise.
+                            Best for waterfalls, nature lovers, and scenic photography.p>
+                    </div>
+                    <div class="citems">
+                        <img src="./gallery/june.jfif">
+                        <h3>April – June</h3>
+                        <p>Enjoy coastal destinations and vibrant local festivals.
+                            Plan activities during mornings and evenings to avoid heat.</p>
+                    </div>
+                    
+
+                </div>
+            
+                <div class="sweets">
+                    <h2 class="hd2">TRAVEL SAFELY</h2>
+                    <hr class="line">
+                    <p>Stay Safe, travel responsibly</p>
+                    <div class="st">
+                        <div class="sitems">
+                            <i class="fa-solid fa-user-shield" style="color: rgb(30, 80, 38);"></i>
+                            <h3>Travel Safety</h3>
+                            <p>Keep your belongings secure and stay aware of your surroundings.
+                            Follow local guidelines and respect nature while traveling.</p>
+                        </div>
+                        <div class="sitems">
+                            <i class="fa-solid fa-mobile-screen" style="color: rgb(30, 80, 38);"></i>
+                            <h3>Keep Emergency Contacts Handy</h3>
+                            <p>Save important emergency numbers before starting your trip.
+Quick access to contacts can be helpful during unexpected situations.</p>
+                        </div>
+                        <div class="sitems">
+                            <i class="fa-solid fa-users" style="color: rgb(30, 80, 38);"></i>
+                            <h3>Follow Local Guidelines</h3>
+                            <p>Respect local customs, rules, and travel regulations.
+Responsible travel helps create a better experience for everyone.</p>
+                        </div>
+                        <div class="sitems">
+                            <i class="fa-solid fa-leaf" style="color: rgb(30, 80, 38);"></i>
+                            <h3>Respect Nature and Don't Litter</h3>
+                            <p>Help preserve Andhra's natural beauty by keeping places clean.
+Dispose of waste responsibly and protect the environments.
+                        </div>
+                        <div class="sitems">
+                            <i class="fa-solid fa-heart" style="color: rgb(30, 80, 38);"></i>
+                            <h3>Be a Responsible Traveller</h3>
+                            <p>Support local communities and travel with cultural awareness.
+Leave a positive impact wherever your journey takes you.
+                        </div>
+                       
+
+                    </div>
+                    <div class="quote">
+                        <img src="./gallery/travel quote.jfif" height="200px" >
+                        <p>Every destination has a story waiting to be explored.
+                            Travel through breathtaking landscapes, embrace new experiences,
+                            and create memories that last a lifetime.
+                        <br> "The world is a book, and those who do not travel read only one page."
+                        — Saint Augustine</p>
+
+
+                    </div>
+
+
+
+
+                </div>
+    
+  <footer class="footer">
+    <div class="footer-logo">
+         <span>HIDDEN ANDHRA</span>
+    </div>
+
+    <p>Discover the Andhra Beyond the Usual</p>
+
+    <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">▶️</a>
+    </div>
+
+    <p class="copyright">
+         2026 Hidden Andhra. All Rights Reserved.
+    </p>
+</footer>
+</body>

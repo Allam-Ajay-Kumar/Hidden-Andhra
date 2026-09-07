@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+      
+        color: white;
+        margin-left: 2vw;
+        margin-top: -1vh;
+        
+    }
+    .hidden h1{
+        letter-spacing: 3px;
+         position: relative;
+        left: 20vh;
+        margin-top: -12vh;
+    }
+    .hidden p{
+        width: 20vw;
+        position: relative;
+        left: 20vh;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+    .header img{
+        margin-left: -1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:80vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+
+    nav a:hover {
+        color: yellow;
+       
+        transform: perspective(200px) translateZ(20px);
+    }
+    .andhra{
+        margin:0;
+        padding-left:100px;
+        width:1435px;
+        height:300px;
+        background-image: url("./Images/mountain.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position:relative;
+    }
+    .andhra-content h1 {
+        margin: 0;
+        font-size: 50px;
+        line-height: 0.95;
+        color: white;
+
+    }
+
+.andhra-content h1 span {
+    color: #f5c542;
+    font-size: 32px;
+}
+.andhra-content p {
+    font-size: 16px;
+   
+    margin: 20px 0;
+    color: white;
+}
+.explore-btn{
+ background-color:#004d32;
+ border-color:#004d32;
+}
+    .btn{
+        color:white;
+        border:#004d32;
+    }
+    .exp{
+      
+      color: #004d32;
+    }
+    
+.explore-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+    .hgoa{
+        color: #004d32;
+    }
+    .hidden-images{
+        height:200px;
+        width:300px;
+    }
+    
+    
+    .image figcaption{
+        color:black;
+        text-align: center;
+    }
+    .hidden-gems {
+    background-color: #f7f5ef;
+    text-align: center;
+    padding: 50px 7%;
+}
+
+.hidden-gems h2 {
+    margin: 0;
+    color: #004d32;
+    font-size: 28px;
+}
+
+.hidden-gems > p {
+    margin: 10px 0 30px;
+    color: #555;
+    font-size: 14px;
+}
+
+.gem-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gem {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+   
+}
+
+.gem img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.gem h3 {
+    margin: 15px 15px 8px;
+    color: #004d32;
+    font-size: 20px;
+}
+
+.gem p {
+    margin: 0 15px 15px;
+    color: #555;
+    font-size: 14px;
+   
+}
+
+.gem a {
+    display: inline-block;
+    margin: 0 15px 20px;
+    color:#004d32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.explore-btn{
+    background-color:#004d32;
+    margin-left:20px;
+    height:40px;
+
+     
+    
+}
+.explore-btn a{
+    color: white;
+   padding: 10px;
+
+}
+
+.footer {
+    background-color: #004d32;
+    color: white;
+    text-align: center;
+    width:100%;
+    margin:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    margin-top: 30px ;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.footer-logo span {
+    letter-spacing: 1px;
+}
+
+.footer p {
+    font-size: 11px;
+    
+}
+
+.social-icons {
+    margin: 6px 0;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: white;
+    color: #004d32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.social-icons a:hover {
+    background-color: #d6a928;
+    color: white;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 5px;
+}
+    
+</style>
+<body>
+    <header class="header">
+        <div class="hidden">
+            <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+            <h1 >HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+        <a href="home.html">Home</a>
+
+        <a href="Explore.html">Explore</a>
+
+        <a href="Culture.html">Culture</a>
+
+        <a href="Food.html">Food</a>
+
+        <a href="Tips.html">Tips</a>
+
+        <a href="About.html">About</a>
+
+    </nav>
+
+    </header>
+    <section class="andhra">
+        <section class = "andhra-content">
+         <h1>
+        Discover the<br>
+        Andhra<br>
+        <span>You Haven't Seen</span>
+    </h1>
+
+        <p>
+            Hidden places. Local stories. Timeless traditions.<br>
+            Experience the real Andhra Pradesh.
+        </p>
+
+       <button class="explore-btn"><a href="#" class="btn">Explore Now </a></button> 
+    </section>
+</section>
+    <h1 align="center" class="exp">EXPLORE ANDHRA</h1>
+       <h4 align="center" >What do you want to explore?</h4>
+       <div class="explore-items">
+        <img  src="./Images/hills.jpeg" height="100px" width="100px">
+        <img src="./Images/beaches.jpeg" height="100px" width="100px">
+        <img src="./Images/history.jpeg" height="100px" width="100px">
+        <img src="./Images/culture.jpeg" height="100px" width="100px">
+        <img src="./Images/food.jpeg" height="100px" width="100px">
+        <img src="./Images/waterfalls.jpeg" height="100px" width="100px">
+       </div>
+
+       <section class="hidden-gems">
+     
+
+        <h2>HIDDEN GEMS OF ANDHRA</h2>
+        <p>Discover the beautiful places beyond the usual.</p>
+
+        <div class="gem-container">
+
+            <div class="gem">
+                <img src="https://images.beyondyatra.com/dest/kadapa/places/gandikota-fort-andhra-pradesh-india_img_6.jpg" alt="Gandikota">
+
+                <h3>Gandikota</h3>
+
+                <p>
+                    Famous for its dramatic canyon and beautiful
+                    views of the Penna River.
+                </p>
+
+                <button class="explore-btn"><a href="#">Explore More </a></button>
+            </div>
+
+            <div class="gem">
+                <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7" alt="Araku Valley">
+
+                <h3>Araku Valley</h3>
+
+                <p>
+                    A beautiful hill valley surrounded by green
+                    forests and misty mountains.
+                </p>
+                 <button class="explore-btn"><a href="#">Explore More </a></button>
+               
+            </div>
+
+            <div class="gem">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Lambasingi">
+
+                <h3>Lambasingi</h3>
+
+                <p>
+                    A peaceful hill destination known for its
+                    cool climate and misty hills.
+                </p>
+
+                <button class="explore-btn"><a href="#">Explore More </a></button>
+            </div>
+            <div class="gem">
+    <img src="https://en-media.thebetterindia.com/uploads/2022/07/Talakona-1658412939.jpeg" alt="Talakona Waterfalls">
+
+    <h3>Talakona Waterfalls</h3>
+
+    <p>
+        A spectacular waterfall surrounded by dense green
+        forests and beautiful natural scenery.
+    </p>
+        <button class="explore-btn"><a href="#">Explore More </a></button>
+</div>
+<div class="gem">
+    <img src="https://vizagtourism.org.in/images/tourist-places/yarada-beach-vizag/yarada-beach-vizag-tourism-opening-time-closing.jpg" alt="Yarada Beach">
+
+    <h3>Yarada Beach</h3>
+
+    <p>
+        A peaceful beach surrounded by green hills,
+        golden sand, and beautiful sea views.
+    </p>
+     <button class="explore-btn"><a href="#">Explore More </a></button>
+</div>
+<div class="gem">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRztMf639ExKHAK-jpUkXSAB9uctNv7biqypHRPUPeGCw&s" alt="Papikondalu">
+
+    <h3>Papikondalu</h3>
+
+    <p>
+        A stunning landscape where the Godavari River
+        flows between beautiful forest-covered hills.
+    </p>
+
+       <button class="explore-btn"><a href="#">Explore More </a></button>
+</div>
+
+
+        </div>
+</section>
+    
+    <footer class="footer">
+    <div class="footer-logo">
+         <span>HIDDEN ANDHRA</span>
+    </div>
+
+    <p>Discover the Andhra Beyond the Usual</p>
+
+    <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">▶️</a>
+    </div>
+
+    <p class="copyright">
+         2026 Hidden Andhra. All Rights Reserved.
+    </p>
+</footer>
+   
+</body>
+</html>

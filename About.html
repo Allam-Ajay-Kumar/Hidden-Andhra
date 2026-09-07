@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<style>
+    body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+
+        color: white;
+        margin-left: 1vw;
+        margin-top: -1vh;
+
+    }
+
+    .hidden h1 {
+        letter-spacing: 3px;
+
+    }
+
+    .hidden p {
+        width: 20vw;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+
+    .header img {
+        margin-left: 1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:60vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+
+
+    }
+
+    nav a:hover {
+        color: yellow;
+
+        transform: perspective(200px) translateZ(20px);
+    }
+    
+
+    main>img {
+        z-index: -1;
+        opacity: 90%;
+    }
+
+    .morethan {
+        position: absolute;
+        font-size: 18px;
+        top: 20vh;
+        left: 10vw;
+        z-index: 1;
+        font-weight: 900;
+        color: white;
+    }
+
+    .morethan h4 {
+        line-height: 20px;
+        font-weight: 900;
+    }
+
+    .morethan span {
+        color: rgb(245, 225, 7);
+        font-size: 40px;
+    }
+
+    .story {
+        position: absolute;
+        right: 40px;
+        top: 220px;
+        color: white;
+        font-size: 20px;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .purpose {
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .purpose .hiddendes {
+        height: 120px;
+        width: 450px;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .sup {
+        padding: 20px;
+        margin-top: 90px;
+
+    }
+
+    .sup p {
+        position: absolute;
+        top: 65vh;
+        right: 4vw;
+        width: 8vw;
+        font-size: 25px;
+        font-weight: 900;
+        color: #ff0404;
+        transform: skew(-30deg);
+    }
+
+    .sup img {
+        position: relative;
+        top: -13vh;
+        right: -5vh;
+    }
+
+    .hiddendes p {
+        margin-top: -15vh;
+        padding: 20px;
+        width: 36vw;
+        line-height: 20px;
+        transform: skew(-5deg);
+        font-size: 20px;
+    }
+
+    .vision-mission {
+        display: flex;
+        justify-content: space-around;
+        background-image: radial-gradient(rgba(232, 186, 186, 0.034),rgba(255, 250, 250, 0),rgba(234, 234, 243, 0.368));
+    }
+
+    .vision-mission div {
+        height: 280px;
+        width: 250px;
+        margin-top: -4vh;
+    }
+
+    .arrow {
+        padding-left: 60px;
+        text-align: center;
+    }
+
+    .eye {
+        padding-left: 60px;
+        text-align: center;
+    }
+
+    .hands {
+        padding-left: 60px;
+        text-align: center;
+    }
+
+    .arrow img {
+        margin-left: 20px;
+    }
+
+    .eye img {
+        margin-left: 15px;
+    }
+
+    .hands img {
+        margin-left: 20px;
+    }
+
+    .arrow p {
+        height: 100px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .eye p {
+        height: 100px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .hands p {
+        height: 100px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .ourstory>p {
+        height: 10vh;
+        width: 50vw;
+        margin-left: 2vw;
+        font-size: 18px;
+        line-height: 2 5px;
+    }
+
+    .island img {
+        position: absolute;
+        right: 10px;
+        top: 1200px;
+        z-index: -1;
+        border-radius: 20px;
+    }
+
+    .island p {
+        z-index: 1;
+        height: 90px;
+        width: 140px;
+        position: absolute;
+        right: 350px;
+        top: 1260px;
+        color: white;
+        font-size: 18px;
+        font-weight: 900;
+        background-image: rgb(8, 186, 11);
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .icons p {
+        text-align: center;
+        margin-top: -3vh;
+        margin-left: -2vw;
+    }
+
+    .icons2 {
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+
+
+    }
+
+    .icons2 i {
+        position: relative;
+        left: 100px;
+    }
+
+    .icons2 .tag1 {
+
+        margin-left: 10px;
+        height: 50px;
+        width: 250px;
+        margin-top: -10px;
+    }
+
+    .icons2 .tag2 {
+
+        margin-left: 80px;
+        height: 50px;
+        width: 250px;
+        margin-top: -10px;
+    }
+
+    .icons2 .tag3 {
+
+        margin-left: 10px;
+        height: 50px;
+        width: 250px;
+        margin-top: -10px;
+    }
+    .glance{
+        background-image: linear-gradient(white, rgb(194, 209, 194) , rgb(214, 200, 200));
+    }
+
+    #comm {
+        margin-left: 60px;
+    }
+
+    .bottomtag h1 {
+        position: absolute;
+        left: 400px;
+        top: 260vh;
+        color: rgb(210, 38, 8);
+        font-weight: 900;
+    }
+
+    .bottomtag h4 {
+        position: absolute;
+        left: 50vw;
+        top: 265vh;
+        font-size: 22px;
+        color: white;
+        font-weight: 900;
+    }
+
+    .awaits {
+        height: 30px;
+        width: 50px;
+        position: absolute;
+        right: 5vw;
+        top: 265vh;
+        color: white;
+        font-size: 22px;
+        font-family: "Pacifico", cursive;
+        transform: skew(10deg);
+    }
+
+    .footer {
+        background-color: #004d32;
+        color: white;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        margin-top: -4px;
+        margin-bottom: -10px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .footer-logo span {
+        letter-spacing: 1px;
+    }
+
+    .footer p {
+        font-size: 11px;
+
+    }
+
+    .social-icons {
+        margin: 6px 0;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: white;
+        color: #004d32;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .social-icons a:hover {
+        background-color: #d6a928;
+        color: white;
+    }
+
+    .copyright {
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 5px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+        <div class="hidden">
+            <h1>HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+
+            <a href="Explore.html">Explore</a>
+
+            <a href="Culture.html">Culture</a>
+
+            <a href="Food.html">Food</a>
+
+            <a href="Tips.html">Tips</a>
+
+            <a href="About.html">About</a>
+
+        </nav>
+
+    </header>
+    <main>
+        <img src="./Images/valley.png" alt="" height="270vh" width="100%">
+        <div class="morethan">
+            <h4>ABOUT US</h4>
+            <H1>MORE THAN <br> <span>A DESTINATION</span> </H1>
+            <h4>We are here to uncover the real Andhra - <br>its people, places, culture and stories.</h4>
+        </div>
+        <div class="story">
+            <p>Andhra <br>in Every <br>Story</p>
+        </div>
+        <h2 style="text-align: center; margin-top: 1vh;">OUR PURPOSE<br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="210vw"></h2>
+        <div class="purpose">
+            <div>
+                <img style="margin-top: -2vh; margin-left: 0.5vw; border-radius: 20px;" src="./Images/gandikota.png"
+                    alt="" height="280vh" width="550vw">
+            </div>
+            <div class="hiddendes">
+                <p>Hidden Andhra is a travel and cultural platform dedicated to
+                    showacsing the lesser-known gems of Andhra Pradesh. We believe
+                    Andhra is much more than its popular tourist spots - it's a land of
+                    breathtaking landscapes, rich heritage, vibrant traditions and
+                    incredible food. Our purpose is to inspire people to explore the
+                    unseen, experience the authentic and connect with the real Andhra.
+                </p>
+            </div>
+            <div class="sup">
+                <img src="./Images/andhra.png" alt="" height="200vh" width="200vw">
+                <p class="less"><sup>"</sup>lesser-known <br>places, greater <br>experience. <sup>"</sup> </p>
+            </div>
+        </div>
+        <div>
+            <h2 style="text-align: center; margin-top: -5vh;">OUR MISSION, VISION & VALUES<br><img
+                    style="margin-top: -3vh;" src="./Images/underline.png" alt="" height="50vh" width="410vw"></h2>
+            <div class="vision-mission">
+                <div class="arrow">
+                    <img src="./Images/arrowicon.png" alt="" height="100vh" width="100vw">
+                    <h2>Our Mission</h2>
+                    <p>
+                        To bring Andhra's hidden treasures
+                        to light and make travel more
+                        meaningful through authentic stories,
+                        local experiences and reliable information.
+                    </p>
+                </div>
+                <div class="eye">
+                    <img src="./Images/eyeicon.jpg" alt="" height="100vh" width="100vw">
+                    <h2>Our Vision</h2>
+                    <p>
+                        To be the most trusted platform
+                        for discovering the unexplored
+                        Andhra, inspiring travellers to
+                        experience its true beauty.
+                    </p>
+                </div>
+                <div class="hands">
+                    <img src="./Images/hansloveicon.png" alt="" height="100vh" width="100vw">
+                    <h2>Our Values</h2>
+                    <p>
+                        Authenticity | Inclusivity | Sustainability
+                        Respect for local communities
+                        Passion for travel and culture
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center; margin-top: 1vh;">OUR STORY<br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="190vw"></h2>
+        <div class=" ourstory">
+            <p>A journey that began with a simple thought. <br><br>
+                Hidden Andhra started as a small idea - to explore the places in
+                Andhra Pradesh that often go unnoticed. What began as a passion
+                for travel and photography slowly turned into a vision to create a
+                platform where stories, people and places come together.
+                Today, we are a growing community of explorers, storytellers
+                and culture lovers who believe that every corner of Andhra has a
+                story worth telling.</p>
+            <div class="island">
+                <img src="./Images/VIZAG✨️.jpg" alt="" height="200vh" width="500vw">
+                <div>
+                    <p><sup>"</sup>Not all who wander are lost,some are justing exploring Andhra. <sup>"</sup></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 style="text-align: center; margin-top: 18vh;">ANDHRA AT A GLANCE<br><img style="margin-top: -3vh;"
+                src="./Images/underline.png" alt="" height="50vh" width="290vw"></h2>
+        <p style="text-align: center; margin-top: -30px;">A land of endless possibilities</p>
+        <div class="glance">
+            <div class="icons">
+                <div>
+                    <h1><i class="fa-solid fa-location-dot" style="color: rgb(14,133,14);"></i><br> 25+</h1>
+                    <p>Hidden Places</p>
+                </div>
+                <div>
+                    <h1><i class="fa-solid fa-place-of-worship" style="color: rgb(14, 133, 14);"></i> <br> 1000+</h1>
+                    <p>Years of History</p>
+                </div>
+                <div>
+                    <h1><i class="fa-solid fa-users-line" style="color: rgb(14, 133, 14);"></i> <br> 50+</h1>
+                    <p>Local Experiences</p>
+                </div>
+                <div>
+                    <h1><i class="fa-solid fa-leaf" style="color: rgb(14, 133, 14);"></i> <br> 1</h1>
+                    <p>Incredible Andhra</p>
+                </div>
+            </div>
+            <h2 style="text-align: center;">OUR COMMITMENT</h2>
+            <p style="text-align: center; line-height: 0vh;">Travel Responsbily, Support Locally</p>
+            <div class="icons2">
+                <div>
+                    <h1><i class="fa-solid fa-leaf" style="color: rgb(14,133,14);"></i><br> Sustainable Travel</h1>
+                    <p class="tag1">Promoting eco-friendly toursim and &emsp;&emsp;&emsp;&emsp;responsible travel</p>
+                </div>
+                <div>
+                    <h1><i class="fa-solid fa-people-group" id="comm" style="color: rgb(14,133,14);"></i> <br> Support
+                        Local
+                        Communities</h1>
+                    <p class="tag2">Showcasing local talent,artisans &emsp;&emsp;&emsp;&emsp;and traditions</p>
+                </div>
+                <div>
+                    <h1><i class="fa-solid fa-globe" style="color: rgb(14,133,14);"></i> <br>Preserve Heritage</h1>
+                    <p class="tag3">Help protect Andhra natural and &emsp;&emsp;&emsp;&emsp;cultural heritage</p>
+                </div>
+
+            </div>
+        </div>
+        <img src="./Images/valley.png" alt="" width="100%" height="180vh">
+        <div class="bottomtag">
+            <h1>BE A PART OF HIDDEN ANDHRA</h1>
+            <h4>Explore, Share, Preserve, Belong.</h4>
+        </div>
+        <div>
+            <p class="awaits">Andhra Awaits You </p>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-logo">
+            <span>HIDDEN ANDHRA</span>
+        </div>
+
+        <p>Discover the Andhra Beyond the Usual</p>
+
+        <div class="social-icons">
+            <a href="#">f</a>
+            <a href="#">◎</a>
+            <a href="#">▶️</a>
+        </div>
+
+        <p class="copyright">
+            2026 Hidden Andhra. All Rights Reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

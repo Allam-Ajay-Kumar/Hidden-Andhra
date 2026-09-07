@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        margin: 0px;
+        overflow-x: hidden;
+
+    }
+
+    .hidden {
+      
+        color: white;
+        margin-left: 2vw;
+        margin-top: -1vh;
+        
+    }
+    .hidden h1{
+        letter-spacing: 3px;
+         position: relative;
+        left: 20vh;
+        margin-top: -12vh;
+    }
+    .hidden p{
+        width: 20vw;
+        position: relative;
+        left: 20vh;
+    }
+
+    .header {
+        display: flex;
+        background-color: #004d32;
+    }
+    .header img{
+        margin-left: -1vw;
+        margin-top: 1vh;
+    }
+
+     .navbar{
+        margin-left:80vh;
+        margin-top:50px;
+        
+    }
+    
+        nav {
+    display: flex;
+    gap:60px;
+    justify-content:flex-end;
+    text-decoration:none;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        
+        
+    }
+
+    nav a:hover {
+        color: yellow;
+       
+        transform: perspective(200px) translateZ(20px);
+    }
+    .category-section {
+    background-color: #f7f8f3;
+    text-align: center;
+    padding: 30px 3%;
+}
+
+.category-section h2 {
+    margin: 0;
+    color: #004d32;
+    font-size: 24px;
+}
+
+.category-section > p {
+    margin: 8px 0 20px;
+    color: #555;
+    font-size: 13px;
+}
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+.category-card {
+    width: 120px;
+    height: 95px;
+    background-color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.category-card h3 {
+    margin: 0;
+    font-size: 13px;
+    color: #222;
+}
+
+.category-card:hover {
+    box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 25px 5%;
+    background-color: white;
+}
+
+.search-box input {
+    width: 220px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.filter-box select {
+    width: 160px;
+    height: 42px;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 14px;
+    color: #555;
+}
+
+.search-button {
+    height: 42px;
+    padding: 0 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004d32;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #087443;
+}
+
+.featured-section {
+    background-color: #f7f8f3;
+    padding: 35px 3%;
+    text-align: center;
+}
+
+.featured-section h2 {
+    margin: 0;
+    color: #004d32;
+    font-size: 25px;
+}
+
+.featured-section > p {
+    margin: 8px 0 25px;
+    color: #555;
+    font-size: 13px;
+}
+
+.destination-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.destination-card {
+    width: 230px;
+    background-color: white;
+    border-radius: 7px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-card h3 {
+    margin: 10px 12px 5px;
+    font-size: 18px;
+    color: #222;
+}
+
+.destination-card p {
+    margin: 0 12px 10px;
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.destination-card span {
+    display: inline-block;
+    background-color: #e8f2e8;
+    color: #245c3d;
+    padding: 4px 8px;
+    margin-left: 12px;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.destination-card a {
+    display: block;
+    background-color: #e5f1e5;
+    color: #004d32;
+    text-align: center;
+    margin: 10px 12px 12px;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.destination-card a:hover {
+    background-color: #004d32;
+    color: white;
+}
+
+.view-more {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.view-more h3 {
+    margin: 0;
+    color: #004d32;
+    font-size: 20px;
+}
+
+.view-more p {
+    color: #555;
+    font-size: 13px;
+    margin: 8px 0 15px;
+}
+
+.view-more-btn {
+    display: inline-block;
+    background-color: #004d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.view-more-btn:hover {
+    background-color: #087443;
+}
+
+.footer{
+    background-color:#004d32;
+    color:white;
+    text-align:center;
+    width:100%;
+    padding:25px 0 10px;
+    margin:0;
+}
+
+.footer-logo{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.footer p{
+    font-size:11px;
+    margin:8px 0;
+}
+
+.social-icons{
+    margin:12px 0;
+}
+
+.social-icons a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:28px;
+    height:28px;
+
+    margin:0 5px;
+    border-radius:50%;
+
+    background-color:white;
+    color:#004d32;
+
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.social-icons a:hover{
+    background-color:#f5c542;
+    color:white;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:15px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}
+
+.footer-links a:hover{
+    color:#f5c542;
+}
+
+.copyright{
+    border-top:1px solid rgba(255,255,255,0.3);
+    padding-top:10px;
+    margin-top:15px !important;
+}
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="hidden">
+            <img src="./Images/logo.png" alt="" height="100vh" width="150vw">
+            <h1 >HIDDEN ANDHRA</h1>
+            <p>Discover the Andhra Beyond the Usual.</p>
+        </div>
+        <nav class="navbar">
+
+        <a href="index.html">Home</a>
+
+        <a href="Explore.html">Explore</a>
+
+        <a href="Culture.html">Culture</a>
+
+        <a href="Food.html">Food</a>
+
+        <a href="Tips.html">Tips</a>
+
+        <a href="About.html">About</a>
+
+    </nav>
+</header>
+<section>
+    <img src="./explore.jpeg" width="100%px">
+</section>
+<section class="category-section">
+
+    <h2>EXPLORE BY CATEGORY</h2>
+    <p>Choose what inspires you</p>
+
+    <div class="category-container">
+
+        <div class="category-card">
+            <div class="category-icon">⛰️</div>
+            <h3>Hills</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🏖️</div>
+            <h3>Beaches</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">💧</div>
+            <h3>Waterfalls</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🛕</div>
+            <h3>Temples</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🐾</div>
+            <h3>Wildlife</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🌊</div>
+            <h3>Rivers & Lakes</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🎭</div>
+            <h3>Culture</h3>
+        </div>
+
+        <div class="category-card">
+            <div class="category-icon">🏛️</div>
+            <h3>Heritage</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="filter-section">
+
+    <div class="search-box">
+        <input type="text" placeholder="Search places...">
+    </div>
+
+    <div class="filter-box">
+        <select>
+            <option>All Districts</option>
+            <option>Visakhapatnam</option>
+            <option>Kadapa</option>
+            <option>Tirupati</option>
+            <option>Alluri Sitharama Raju</option>
+        </select>
+    </div>
+
+    <div class="filter-box">
+        <select>
+            <option>All Categories</option>
+            <option>Hills</option>
+            <option>Beaches</option>
+            <option>Waterfalls</option>
+            <option>Temples</option>
+            <option>Wildlife</option>
+            <option>Culture</option>
+            <option>Heritage</option>
+        </select>
+    </div>
+
+    <div class="filter-box">
+        <select>
+            <option>Sort By</option>
+            <option>Popular</option>
+            <option>A-Z</option>
+            <option>Newest</option>
+        </select>
+    </div>
+
+    <button class="search-button">Search</button>
+
+</section>
+
+<section class="featured-section">
+
+    <h2>FEATURED DESTINATIONS</h2>
+    <p>Handpicked places you shouldn't miss</p>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+            <img src="https://images.beyondyatra.com/dest/kadapa/places/gandikota-fort-andhra-pradesh-india_img_6.jpg" alt="Gandikota">
+            <h3>Gandikota</h3>
+            <p>The Grand Canyon of India, with breathtaking views and historic fort.</p>
+            <span>Hills</span>
+            <span>Heritage</span>
+            <a href="#">View Details</a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Araku%20Valley.jpg" alt="Araku Valley">
+            <h3>Araku Valley</h3>
+            <p>A picturesque hill station known for its coffee plantations and green valleys.</p>
+            <span>Hills</span>
+            <span>Nature</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://www.thestupidbear.com/wp-content/uploads/2021/01/768px-Talakona_Waterfalls_near_Tirupati_India.jpg" alt="Talakona Falls">
+            <h3>Talakona Falls</h3>
+            <p>A serene waterfall surrounded by dense forests in the Seshachalam hills.</p>
+            <span>Waterfalls</span>
+            <span>Nature</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Yarada%20Beach.jpg" alt="Yarada Beach">
+            <h3>Yarada Beach</h3>
+            <p>A hidden gem with golden sands, green hills, and beautiful sea views.</p>
+            <span>Beaches</span>
+            <span>Nature</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1694419888_papi_kondalu_2_800x500.png" alt="Papikondalu">
+            <h3>Papikondalu</h3>
+            <p>Majestic hills, serene backwaters and unforgettable boat journeys.</p>
+            <span>Rivers & Lakes</span>
+            <span>Nature</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://static2.tripoto.com/media/filter/nl/img/1/SpotDocument/1516009504_1445438845_copy_dsc_3288.jpg.webp" alt="Horsley Hills">
+            <h3>Horsley Hills</h3>
+            <p>A peaceful hill station with cool climate and scenic views.</p>
+            <span>Hills</span>
+            <span>Adventure</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Arasavalli%20temple.jpg" alt="Arasavalli Sun Temple">
+            <h3>Arasavalli Sun Temple</h3>
+            <p>A historic temple dedicated to Lord Surya.</p>
+            <span>Temples</span>
+            <span>Heritage</span>
+            <a href="#">View Details </a>
+        </div>
+
+        <div class="destination-card">
+            <img src="https://cdn.cholantours.com/city_attraction_todos/1773902203_belum-caves-andhra-pradesh-cholan-tour.webp" alt="Belum Caves">
+            <h3>Belum Caves</h3>
+            <p>The second longest cave system in India with stunning rock formations.</p>
+            <span>Heritage</span>
+            <span>Adventure</span>
+            <a href="#">View Details </a>
+        </div>
+        <div class="destination-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR30SCYLnlgC-U7IWyQ3gRQHBF5rj6y_w9aGPugvFPxPXa5joc3zdiiCE&s=10" alt="Maredumilli">
+    <h3>Maredumilli</h3>
+    <p>A beautiful forest destination known for waterfalls, greenery, and peaceful nature.</p>
+    <span>Wildlife</span>
+    <span>Nature</span>
+    <a href="#">View Details </a>
+</div>
+<div class="destination-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxaiNKI7eQJ7NzmmnmkrhocoW0mwmHbiKAxxa7ASZDWA&s=10" alt="Borra Caves">
+    <h3>Borra Caves</h3>
+    <p>Fascinating limestone caves featuring impressive natural rock formations.</p>
+    <span>Heritage</span>
+    <span>Adventure</span>
+    <a href="#">View Details </a>
+</div>
+
+    </div>
+
+</section>
+
+<section>
+    <div class="view-more">
+    <h3>Want to Discover More?</h3>
+    <p>There are many more beautiful places waiting to be explored.</p>
+    <a href="#" class="view-more-btn">View All Places </a>
+</div>
+</section>
+
+<section>
+    <footer class="footer">
+
+    <div class="footer-logo">
+         <span>HIDDEN ANDHRA</span>
+    </div>
+
+    <p>Discover the Andhra Beyond the Usual.</p>
+
+    <div class="social-icons">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">▶</a>
+    </div>
+
+    
+
+    <p class="copyright">
+        2026 Hidden Andhra. All Rights Reserved.
+    </p>
+
+</footer>
+
+</section>
+
+</body>
+</html>
